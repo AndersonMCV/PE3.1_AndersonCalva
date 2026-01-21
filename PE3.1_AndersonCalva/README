@@ -1,0 +1,15 @@
+Algoritmo MIES
+    Entrada: dependientes, esZonaRural
+    Salida: monto
+
+    Si dependientes == 0 Entonces
+        monto <- 55
+        Si esZonaRural Entonces
+            monto <- monto * 1.15
+        FinSi
+        Retornar monto
+    FinSi
+
+    monto <- 15 + CalcularSubsidioBDH(dependientes - 1, esZonaRural)
+    Retornar monto
+FinAlgoritmo
